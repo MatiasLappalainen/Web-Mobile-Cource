@@ -14,10 +14,7 @@ const PORT = process.env.PORT || 3001;
 const data = require('./data.json');
 
 app.use(express.static(path.join(__dirname, './client/build/')));
-console.log(__dirname);
 app.use(bodyParser.json());
-
-console.log(process.argv);
 
 app.get('/api/persons', (req, res) => {
   mongo
