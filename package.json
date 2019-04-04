@@ -9,11 +9,8 @@
     "lodash": "^4.17.11",
     "mongoose": "^5.4.16"
   },
-  "devDependencies": {
-    "nodemon": "^1.18.10"
-  },
   "scripts": {
     "start": "node server.js",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "build": "cd client && npm install && npm run build"
   }
 }
